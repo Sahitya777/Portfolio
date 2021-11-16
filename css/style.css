@@ -1,0 +1,61 @@
+@import 'utility.css';
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+}
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased;
+}
+header{
+    background-color: var(--dark);
+    height: 550px;
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease-out;
+}
+header nav .left a:hover{
+    color: var(--primary);
+}
+header nav{
+    padding: 2rem 0;
+}
+header nav .brand{
+    margin-right: 3rem;
+}
+.btn{
+    padding: 0.8rem 2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.btn-primary{
+    background: var(--primary);
+    color: var(--dark);
+    transition: all .3s ease;
+}
+.btn-primary:hover{
+    background: transparent;
+    border-color: var(--primary);
+    color:var(--primary)
+}
