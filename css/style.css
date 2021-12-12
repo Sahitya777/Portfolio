@@ -54,9 +54,9 @@ header nav .brand{
     color: var(--pure);
 }
 .hero .right h6{
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     color: var(--primary);
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 .hero .right h1{
     font-size: 4rem;
@@ -86,14 +86,14 @@ section.about .about-me-img{
 }
 section.about h1{
     margin-bottom: 1rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 400;
 }
 section.about h1 span{
     color: var(--primary);
 }
 section.about h3{
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     font-weight: 400;
 }
@@ -131,12 +131,61 @@ section.about .social a:hover{
     margin-bottom: 1rem;
     line-height: 0.5;
 }
+
 .section-heading +p{
     color: var(--ternary);
+    font-size: 1.5rem;
     font-family: 'Lato',sans-serif;
-    margin-bottom: 1rem;
+    margin-bottom: 7rem;
     text-align: center;
+    
 }
 .section-heading span{
     color: var(--primary);
+    font-size: 2rem;
+}
+section.services{
+    background: var(--dark);
+}
+section.services .card-wraper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 6rem;
+
+}
+section.services .card-wraper .crad{
+    background:var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 3.5rem;
+    text-align: center;
+    transition: all .3s ease;
+}
+section.services .card-wraper .crad img{
+    position: absolute;
+    height: 90px;
+    top:-3.5rem;
+    left:50%;
+    transform: translateX(-50%);
+
+}
+section.services .card-wraper .crad h2{
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-bottom: 1.3rem;
+}
+section.services .card-wraper .crad p{
+    font-family: 'Lato',sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+section.services .card-wraper .crad:hover{
+    background: var(--dark);
+}
+section.services .card-wraper .crad:hover h2{
+    color: var(--primary);
+}
+section.services .card-wraper .crad:hover p{
+    color: var(--light);
 }
