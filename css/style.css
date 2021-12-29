@@ -189,3 +189,42 @@ section.services .card-wraper .crad:hover h2{
 section.services .card-wraper .crad:hover p{
     color: var(--light);
 }
+section.work{
+    background:var(--light);
+}
+section.work .card-wraper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+section.work .card-wraper .card{
+    position: relative;
+    height: 300px;
+}
+section.work .card-wraper .card .overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(61,207,211,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--light);
+    opacity: 0;
+    transition: all .3s ease;
+}
+section.work .card-wraper .card .overlay a{
+    margin-top: 1rem;
+    color: var(--secondary);
+    text-decoration: none;
+}
+section.work .card-wraper .card img{
+    height: 100%;
+    width: 100%;
+}
+section.work .card-wraper .card:hover .overlay{
+    opacity: 1;
+}
