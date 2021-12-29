@@ -195,7 +195,7 @@ section.work{
 section.work .card-wraper{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 2rem;
+    grid-gap: 2.5rem;
 }
 section.work .card-wraper .card{
     position: relative;
@@ -227,4 +227,59 @@ section.work .card-wraper .card img{
 }
 section.work .card-wraper .card:hover .overlay{
     opacity: 1;
+}
+section.academics{
+    background: var(--dark);
+    clip-path: polygon(0 0,100% 0,100% 100%,67% 90%,0 100%);
+    padding-bottom: 12rem;
+}
+section.academics .section-heading{
+    color: var(--pure);
+}
+section.academics .card-wraper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 3rem;
+}
+section.academics .card-wraper .card{
+    background:var(--pure);
+}
+section.academics .card-wraper .card .img-wraper img{
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+section.academics .card-wraper .card .card-content{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+section.academics .card-wraper .card .card-content h1{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+section.academics .card-wraper .card .card-content a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+section.academics .card-wraper .card .card-content a:hover{
+    color: var(--primary);
+}
+section.academics .card-wraper .card .card-content span{
+    color: var(--ternary);
+    font-size: 1rem;
+}
+section.academics .card-wraper .card .card-content span:hover{
+    color:var(--dark);
+    font-weight: 600;
+}
+section.academics .card-wraper .card .card-content p{
+    font-family: 'Lato',sans-serif;
+    color: var(--ternary);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+section.academics .card-wraper .card .card-content a.read-more{
+    font-size: 1rem;
 }
