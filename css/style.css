@@ -11,6 +11,9 @@ body{
     height: 5300px;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 *{
     padding: 0;
     margin: 0;
