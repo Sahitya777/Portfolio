@@ -8,6 +8,7 @@
     --secondary:#070606;
 }
 body{
+    height: 5300px;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 *{
@@ -282,4 +283,49 @@ section.academics .card-wraper .card .card-content p{
 }
 section.academics .card-wraper .card .card-content a.read-more{
     font-size: 1rem;
+}
+section.contact h1{
+    font-size: 2rem;
+}
+section.contact .card-wraper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 3rem;
+}
+section.contact .card-wraper .card{
+    margin-top: 3rem;
+    text-align: center;
+}
+section.contact .card-wraper .card img{
+    margin-bottom: 1rem;
+}
+section.contact .card-wraper .card h2{
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+}
+section.contact .card-wraper .card h6{
+    font-size: 1rem;
+    color: var(--ternary);
+    font-weight: 500;
+}
+footer{
+    background:var(--dark);
+    text-align: center;
+    padding: 5rem 0;
+}
+footer .footer-logo{
+    margin-bottom: 3rem;
+    width: 150px;
+}
+footer .footer-social a{
+    margin-right: 1rem;
+}
+footer .footer-social{
+    margin-bottom: 3rem;
+    margin-right: -1rem;
+}
+footer .copyright{
+    color: var(--ternary);
+    font-size: 1.5rem;
 }
