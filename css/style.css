@@ -180,7 +180,7 @@ section.services{
 section.services .card-wraper{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 3rem;
+    grid-column-gap: 2rem;
     grid-row-gap: 6rem;
 
 }
@@ -281,8 +281,7 @@ section.academics .card-wraper .card .img-wraper img{
 }
 section.academics .card-wraper .card .card-content{
     padding: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+
 }
 section.academics .card-wraper .card .card-content h1{
     font-weight: 600;
@@ -465,7 +464,7 @@ footer .copyright{
     }
     header{
         clip-path: polygon(0 0,100% 0,100% 100%,70% 95%,0 100%);
-    
+        margin-bottom: 2rem;
     }
     .about-inner-wrap{
         flex-direction: column;
@@ -476,34 +475,30 @@ footer .copyright{
     }
     .about .right .social{
         justify-content: center;
+        margin-bottom: 2rem;
     }
     section{
-        padding: 4rem;
+        padding: 3rem 0rem;
     }
     section.services .card-wraper {
         grid-template-columns: repeat(1,1fr);
+        
     }
-    section.services .card-wraper .crad{
-        width: 390px;
-        margin-left: -4rem;
-    }
+
     section.work .card-wraper {
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        width: 390px;
-        margin-left: -4rem;
+
     }
     section.academics .card-wraper {
         display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-gap: 3rem;
-        width: 390px;
-        margin-left: -4rem;
     }
     section.academics .card-wraper .card .card-content {
         padding: 1rem;
         padding-left: 1rem;
-        padding-right: 10rem;
+        padding-right: 12rem;
     }
     section.academics .card-wraper .card .img-wraper img {
         width: 542px;
@@ -520,7 +515,5 @@ footer .copyright{
         grid-template-columns: repeat(1,1fr);
         grid-gap: 3rem;
     }
-
-
 
 }
