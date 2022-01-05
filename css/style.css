@@ -9,7 +9,7 @@
 }
 body{
     height: 5300px;
-    width: 101%;
+    width: 100%;
     overflow-x: hidden;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
@@ -32,6 +32,26 @@ header{
     padding: 0px 15px;
     margin: 0 auto;
 }
+@media (min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media (min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media (min-width:992px) {
+    .container{
+        max-width: 960px;
+    }
+}
+@media (min-width:1200px) {
+    .container{
+        max-width: 1152px;
+    }
+}
 header nav .left a{
     color: var(--pure);
     text-decoration: none;
@@ -50,14 +70,18 @@ header nav .brand{
     margin-right: 3rem;
 }
 .hero{
-    padding: 0.8rem 0;
+    padding: 1rem 0;
 }
 .hero .left img{
-   
     width: 400px;
+    margin-bottom: 1rem;
+    margin-top: -2rem;
+
 }
 .hero .right{
     color: var(--pure);
+    margin-top: -4rem;
+    margin-left: -4rem;
 }
 .hero .right h6{
     font-size: 1.9rem;
@@ -334,11 +358,6 @@ footer .copyright{
     color: var(--ternary);
     font-size: 1.5rem;
 }
-@media (max-width:1024px){
-    header #main-nav{
-        display: none;
-    }
-}
 .site-main-wraper{
     position: relative;
 }
@@ -363,7 +382,7 @@ footer .copyright{
     padding-top: 5rem;
     overflow-x: hidden;
     transform: translateX(-100%);
-    transition: all .5s ease-in-out;
+    transition: all .7s ease-in-out;
 }
 .times{
     position: fixed;
@@ -384,4 +403,25 @@ footer .copyright{
 }
 .open{
     transform: translateX(0);
+}
+@media (max-width:1024px){
+    header #main-nav{
+        display: none;
+    }
+    .hero .left img{
+        width: 320px;
+        margin-top: 1rem;
+    }
+    .hero .right{
+        margin-top: 1rem;
+    }
+    .hero .right h1{
+        font-size: 3rem;
+    }
+    .hero{
+        padding-top: 1rem;
+    }
+    section.about .about-me-img {
+        height: 219px;
+    }
 }
