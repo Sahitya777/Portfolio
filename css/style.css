@@ -133,6 +133,10 @@ section.about p{
     line-height: 1.9rem;
     margin-bottom: 2rem;
 }
+section.about p a{
+    text-decoration: none;
+    color: var(--dark);
+}
 section.about .social{
     display: flex;
 }
@@ -275,7 +279,7 @@ section.academics .card-wraper .card{
     background:var(--pure);
 }
 section.academics .card-wraper .card .img-wraper img{
-    width: 600px;
+    width: 540px;
     height: 400px;
     object-fit: cover;
 }
